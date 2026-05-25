@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #030712;
+    --foreground: #f9fafb;
+    --card: #111827;
+    --card-foreground: #f9fafb;
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --border: #1f2937;
+  }
+}
+
+body {
+  background-color: #030712;
+  color: #f3f4f6;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for a premium look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Neon Glow effects */
+.neon-glow-blue {
+  box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.2);
+}
+
+.neon-glow-indigo {
+  box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.2);
+}
+
+.neon-glow-emerald {
+  box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.2);
+}
+
+/* Sparkles animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
