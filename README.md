@@ -17,6 +17,25 @@ We wanted to keep the setup as simple as possible:
 
 ---
 
+
+## Live Demo
+
+https://ai-spend-audit-opal.vercel.app/
+
+## Screenshots
+
+### Homepage
+
+![Homepage](public/screenshots/home.png)
+
+### Audit Form
+
+![Audit Form](public/screenshots/form.png)
+
+### Results Page
+
+![Results](public/screenshots/results.png)
+
 ## 🚀 Local Setup
 
 ### 1. Environment Variables
